@@ -261,3 +261,17 @@ const wordList = [
     },
 ];
 
+const keyboard = document.querySelector(".keyboard")
+
+const getRandomWord = function(){
+    const { word , hint } = wordList[Math.floor(Math.random() * wordList.length)];
+    console.log(word , hint);
+
+}
+
+for(let i = 97; i<= 122; i++){
+    const button = document.createElement("button");
+    //nomenclatura standard per intero alfabeto (stringa)
+    button.innerText = String.fromCharCode(i);
+    keyboard.appendChild(button);
+}
