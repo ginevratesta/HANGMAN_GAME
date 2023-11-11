@@ -260,14 +260,17 @@ const wordList = [
         hint: "Exceptionally clever, talented, or impressive."
     },
 ];
+const wordDisplay = document.querySelector(".word-display");
+const keyboard = document.querySelector(".keyboard");
 
-const keyboard = document.querySelector(".keyboard")
 
 const getRandomWord = function(){
     const { word , hint } = wordList[Math.floor(Math.random() * wordList.length)];
-    console.log(word , hint);
-
+    console.log(word);
+    document.querySelector(".hint-text b").innerText = hint;
+    wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>`).join("");
 }
+
 
 for(let i = 97; i<= 122; i++){
     const button = document.createElement("button");
@@ -275,3 +278,6 @@ for(let i = 97; i<= 122; i++){
     button.innerText = String.fromCharCode(i);
     keyboard.appendChild(button);
 }
+
+
+getRandomWord()
