@@ -88,7 +88,7 @@ main {
 :where(.game-modal, .keyboard) button{
     color: white;
     background: rgb(247, 153, 76);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 4px;
@@ -152,7 +152,7 @@ main {
     padding: 12px 23px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
     .container{
         flex-direction: column;
         padding: 30px 15px;
@@ -163,5 +163,8 @@ main {
     }
     .hangman-box h1{
         display: none;
+    }
+    .keyboard button{
+        min-width: 50px;
     }
 }
