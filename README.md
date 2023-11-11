@@ -30,7 +30,3 @@ This project is a result of following the tutorial provided by [CodingNepal](htt
 ## Learning Purpose
 
 This project was created for educational purposes, as part of the learning journey in web development. It serves as a practical exercise in building a simple interactive game using HTML, CSS, and JavaScript.
-
-Feel free to explore, modify, and enhance the project for your own learning experience. If you have any questions or suggestions, don't hesitate to reach out.
-
-Happy coding! 😊
